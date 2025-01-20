@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broneeri aeg - Marie ilutuba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1 class="business-name">Marie ilutuba</h1>
+            <div class="navigation">
+                <a href="index.html">AVALEHT</a>
+                <a href="hinnakiri.html">HINNAKIRI</a>
+                <a href="broneering.html">BRONEERI AEG</a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="social-icons">
+                <a class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tumblr.com/marybeautysalon-blog" class="social-icon"><i class="fab fa-tumblr"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="booking-container">
+        <h2>Broneeri aeg</h2>
+        <form class="booking-form" id="bookingForm">
+            <div class="form-group">
+                <label for="service">Teenus:</label>
+                <select id="service" name="service" required>
+                    <option value="">Vali teenus...</option>
+                    <optgroup label="Juuksur">
+                        <option value="naiste-loikus">Naiste lõikus - 35€</option>
+                        <option value="meeste-loikus">Meeste lõikus - 25€</option>
+                        <option value="varvimine">Värvimine - alates 45€</option>
+                        <option value="soeng">Soengu tegemine - alates 35€</option>
+                    </optgroup>
+                    <optgroup label="Maniküür">
+                        <option value="klassikaline-manikuur">Klassikaline maniküür - 25€</option>
+                        <option value="geellakkimine">Geellakkimine - 35€</option>
+                        <option value="kyunte-hooldus">Küünte hooldus - 15€</option>
+                    </optgroup>
+                    <optgroup label="Pediküür">
+                        <option value="klassikaline-pedikuur">Klassikaline pediküür - 35€</option>
+                        <option value="spa-pedikuur">SPA pediküür - 45€</option>
+                    </optgroup>
+                    <optgroup label="Näohooldus">
+                        <option value="klassikaline-naohooldus">Klassikaline näohooldus - 45€</option>
+                        <option value="sugavpuhastus">Sügavpuhastus - 55€</option>
+                        <option value="noorendav-hooldus">Noorendav hooldus - 65€</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Kuupäev:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Kellaaeg:</label>
+                <select id="time" name="time" required>
+                    <option value="">Vali aeg...</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9+\s-]+" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Märkused (valikuline):</label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Broneeri aeg</button>
+        </form>
+    </div>
+
+    <div class="address-section">
+        <p>Aadress: Kaunase pst 55, Tartu</p>
+        <p>E-R: 10:00-16:00 ja L-P: 12:00-18:00</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
